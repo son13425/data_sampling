@@ -47,4 +47,4 @@ python data_sampling.py
 [Оксана Широкова](https://github.com/son13425)
 
 ## Лицензия
-Проект выпущены под лицензией [MIT](https://github.com/son13425/bs4_parser_pep/blob/master/COPYING.txt)
+Проект выпущены под лицензией [MIT](https://github.com/son13425/data_sampling/blob/main/COPYING.txt)
