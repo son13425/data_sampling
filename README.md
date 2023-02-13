@@ -43,7 +43,7 @@ pip install -r requirements.txt
 python data_sampling.py
 ```
 
-### Автор.
+### Автор
 [Оксана Широкова](https://github.com/son13425)
 
 ## Лицензия
