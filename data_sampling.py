@@ -101,21 +101,14 @@ def select_data(
 
 
 def comparison_parameters_with_aperture(
-    parametr_1: List[float],
-    parametr_2: List[float],
+    param_1: List[float],
+    param_2: List[float],
     aperture: List[float]
 ) -> bool:
     """Вычисляет разницу между значениями параметров
        и сравнивает ее с апертурой"""
-    difference_parameter_values = (
-        [(fabs(Decimal(x) - Decimal(y))
-          for x, y in zip(parametr_2, parametr_1))]
-    )
-    comparison_parameters_with_aperture = map(
-        le,
-        difference_parameter_values,
-        aperture
-    )
+    dpv = [fabs(Decimal(x) - Decimal(y)) for x, y in zip(param_2, param_1)]
+    comparison_parameters_with_aperture = map(le, dpv, aperture)
     if False in comparison_parameters_with_aperture:
         return True
 
