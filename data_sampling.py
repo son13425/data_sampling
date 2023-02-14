@@ -94,10 +94,10 @@ def select_data(
                         if index > 1:
                             data.append(float(value.replace(',', '.')))
                     packages_data.append((data_record, tuple(data)))
+        quicksort(packages_data, 0, len(packages_data))
+        return title, packages_data
     except FileNotFoundError:
         print(f'Файл базы данных ({FILENAME_BD}) не найден')
-    quicksort(packages_data, 0, len(packages_data))
-    return title, packages_data
 
 
 def comparison_parameters_with_aperture(
