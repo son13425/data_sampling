@@ -5,6 +5,7 @@ from constants import BASE_DIR, DT_FORMAT, LOG_FORMAT
 
 
 def configure_logging():
+    """Настраивает конфигурацию логов"""
     log_dir = BASE_DIR / 'logs'
     log_dir.mkdir(exist_ok=True)
     log_file = log_dir / 'data_sampling.log'
